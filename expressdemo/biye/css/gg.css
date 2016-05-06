@@ -201,9 +201,9 @@ div {
   border: none;
   background: url(../img/move-top.png) no-repeat 0px 0px;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
   .jumu {
-    min-height: 400px;
+    min-height: 500px;
   }
   .jumu .header-top {
     position: absolute;
@@ -212,11 +212,29 @@ div {
     width: 95%;
   }
   .jumu .header-top .header-logo {
-    margin-left: 2%;
+    margin-left: 5%;
   }
   .jumu .header-top .header-menu {
     float: left;
-    margin-left: 3%;
+    margin-left: 8%;
+  }
+}
+@media (max-width: 1040px) {
+  .jumu {
+    min-height: 400px;
+  }
+  .jumu .header-top {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+    width: 100%;
+  }
+  .jumu .header-top .header-logo {
+    margin-left: 1%;
+  }
+  .jumu .header-top .header-menu {
+    float: left;
+    margin-left: 1%;
   }
 }
 @media (max-width: 1024px) {

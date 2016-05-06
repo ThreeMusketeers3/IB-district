@@ -65,6 +65,31 @@ div {
   background: url(../img/icom.jpg) no-repeat -256px -256px;
   margin: 35px auto;
 }
+.custom .custom_left a:hover .icom1 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -25px -140px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom2 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -372px -140px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom3 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -25px -256px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom4 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -372px -372px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom5 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -256px -256px;
+  transform: scale(1.1);
+}
 .custom .custom_left h3 {
   font-weight: bold;
   color: beige;
