@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 12px;
 }
 a {
   color: #1B242F;
@@ -22,7 +23,7 @@ div {
 }
 .jumu .header-top {
   position: absolute;
-  left: 3.2%;
+  left: 6%;
   top: 50%;
   background-color: beige;
   background: rgba(253, 253, 253, 0.6);
@@ -56,6 +57,7 @@ div {
 }
 .jumu .header-top .header-menu ul li a {
   text-decoration: none;
+  font-size: 16px;
 }
 .footer {
   background: #282d38;
