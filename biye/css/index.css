@@ -9,6 +9,9 @@ a {
   text-decoration: none;
   background: transparent;
 }
+a:hover {
+  text-decoration: none;
+}
 img {
   border: none;
 }
@@ -70,7 +73,7 @@ div {
   cursor: pointer;
 }
 .banner-2 {
-  height: 300px;
+  margin: 20px 0px;
 }
 .banner-2 a:hover {
   text-decoration: none;
@@ -84,5 +87,33 @@ div {
   display: block;
   font-size: 20px;
   font-weight: bold;
+}
+.content-1 {
+  background: url(../img/content1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.content-2 {
+  width: 100%;
+  margin: 20px 0px;
+}
+.content-1-t {
+  margin: 0px 0px 150px;
+}
+.content-1-a {
+  font-size: 30px;
+  font-family: '微软雅黑';
+  margin: 80px auto 90px;
+  width: 240px;
+  display: block;
+  color: #fff;
+}
+.content-1-span {
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+.content-3 {
+  background: #1a2940;
+  padding: 50px 0px;
 }
 /*# sourceMappingURL=index.css.map */
