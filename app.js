@@ -58,7 +58,7 @@ app.use("/login",loginRouter);
 app.use("/admin",util.checkLogin,adminRouter);//进入admin验证是否登录
 
 //静态服务器
-app.use(express.static('public'));
+app.use(express.static('IB'));
 
 //配置404错误 404并一个错误，使用中间件来处理
 app.use(function( req,res,next ){
