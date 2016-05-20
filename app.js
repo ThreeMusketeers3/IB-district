@@ -34,7 +34,7 @@ global.productControl = require("./control/productControl.js")();
 //加载路由
 global.loginRouter = require("./router/loginRouter.js");
 global.adminRouter = require("./router/adminRouter.js");
-global.APIRouter = require("./router/APIRouter.js");
+//global.APIRouter = require("./router/APIRouter.js");
 
 var app = express();
 //配置body解析
@@ -57,10 +57,10 @@ ejs.delimiter = "$";
 app.use("/admin/favicon.ico",util.favicon);
 app.use("/login",loginRouter);
 app.use("/admin",util.checkLogin,adminRouter);//进入admin验证是否登录
-app.use("/API",APIRouter);
+//app.use("/API",APIRouter);
 
 //静态服务器
-app.use(express.static('public'));
+app.use(express.static('IB'));
 
 //配置404错误 404并一个错误，使用中间件来处理
 app.use(function( req,res,next ){
