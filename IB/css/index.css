@@ -73,13 +73,10 @@ div {
   cursor: pointer;
 }
 .banner-2 {
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 .banner-2 a:hover {
   text-decoration: none;
-}
-.content-3 {
-  color: #fff;
 }
 .content-3-a {
   color: #fff;
@@ -87,6 +84,7 @@ div {
   display: block;
   font-size: 20px;
   font-weight: bold;
+  text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 .content-3-a:hover {
@@ -94,15 +92,25 @@ div {
   transition: all 0.5s ease-in-out;
 }
 .content-1 {
-  background: url(../img/content1.jpg) no-repeat;
+  background: url("../img/content1.jpg") no-repeat;
   background-size: 100% 100%;
 }
 .content-2 {
+  color: black;
+  margin: 10px auto;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
   width: 100%;
-  margin: 20px 0px;
+  margin: 20px 0;
+}
+.content-3-a:hover {
+  color: #f3775e;
+  transition: all 0.5s ease-in-out;
 }
 .content-1-t {
-  margin: 0px 0px 150px;
+  margin: 0 0 150px;
 }
 .content-1-a {
   font-size: 30px;
@@ -119,7 +127,8 @@ div {
 }
 .content-3 {
   background: #1a2940;
-  padding: 50px 0px;
+  padding: 50px 0;
+  color: #fff;
 }
 .content-3-yuan1 {
   width: 8px;
@@ -127,7 +136,7 @@ div {
   border-radius: 50%;
   background: #fff;
   display: inline-block;
-  margin: 6px 0px;
+  margin: 6px 0;
 }
 .content-3-yuan2 {
   width: 11px;
@@ -167,7 +176,7 @@ div {
   border-radius: 50%;
   background: #fff;
   display: inline-block;
-  margin: 6px 0px;
+  margin: 6px 0;
 }
 .content-3-title1 {
   font-family: '微软雅黑';
@@ -178,15 +187,74 @@ div {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: 0px auto;
+  margin: 0 auto;
   border: 3px solid #fff;
 }
 .content-4 {
-  background: url(../img/content3.jpg);
+  background: url("../img/content3.jpg");
   background-size: 100% 100%;
-  padding: 50px 0px;
+  padding: 50px 0;
 }
 .content-2-b1 {
   font-weight: bold;
+}
+.lunbo-1-p {
+  font-family: '微软雅黑';
+  margin-top: 10px;
+  font-size: 20px;
+}
+.lunbo-1-div {
+  top: 10%;
+  font-size: 40px;
+}
+@media (min-width: 320px) and (max-width: 940px) {
+  .lunbo-1-div {
+    top: 0;
+    font-size: 36px;
+  }
+  .lunbo-1-p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}
+@media (min-width: 200px) and (max-width: 680px) {
+  .lunbo-1-div {
+    font-size: 12px;
+  }
+  .lunbo-1-p {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .lunbo-1-div {
+    top: -30%;
+    font-size: 12px;
+  }
+  .lunbo-1-p {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+.content-2-pi {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .content-2-pi {
+    width: 450px;
+    height: 400px;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .content-2-pi {
+    width: 95%;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
