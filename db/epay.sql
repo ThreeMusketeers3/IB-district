@@ -1,8 +1,9 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2016/5/10 15:33:39                           */
+/* Created on:     2016/5/10 16:38:40                           */
 /*==============================================================*/
-create database epay default charset = utf8;
+
+create database epay default charset utf8;
 
 use epay;
 
@@ -15,23 +16,23 @@ create table admin
    aname                varchar(100),
    email                varchar(100),
    password             varchar(100),
-   addtime              datetime,
    issuper              int,
+   addtime              datetime,
    primary key (aid)
 );
-insert into admin values(default,'超级管理员','admin@yuanku.org','admin',now(),0);
-
+insert into admin values(default,'超级管理员','admin@qq.com','admin',0,now());
 
 /*==============================================================*/
 /* Table: news                                                  */
 /*==============================================================*/
 create table news
 (
-   nid                  int primary key auto_increment,
+   nid                  int not null auto_increment,
    ntitle               varchar(100),
    content              text,
    pubdate              datetime,
-   author               int
+   author               int,
+   primary key (nid)
 );
 
 /*==============================================================*/

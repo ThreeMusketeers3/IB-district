@@ -1,12 +1,12 @@
 {
   "name": "epay",
   "version": "1.0.0",
-  "description": "this is a b2c",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lvhongzhan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
@@ -15,6 +15,7 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "log4js": "^0.6.36",
+    "multer": "^1.1.0",
     "mysql": "^2.10.2"
   }
 }

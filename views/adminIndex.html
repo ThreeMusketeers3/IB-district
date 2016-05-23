@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>epay后台管理</title>
+    <title>Bootflat-Admin Template</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="bookmark" href="favicon.ico"/>
-    <!-- site css -->
     <link rel="stylesheet" href="/css/site.min.css">
-    <link rel="stylesheet" href="/css/yuanku.css">
+    <link rel="stylesheet" href="/css/wysiwyg.css">
+    <link rel="stylesheet" type="text/css" href="/css/loading.css"/>
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-custom">
@@ -29,46 +29,51 @@
               <li class="active"><a href="/login/logout">注销</a></li>
               <li class="active"><a href="/index.html">返回首页</a></li>
             </ul>
+
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-    
-		<div class="container-fluid">
+    <!--header-->
+    <div class="container-fluid">
+    <!--documents-->
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
             <ul class="list-group panel">
                 <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>菜单栏</b></li>
-                <$ if( user.issuper == 0 ) { $>
+                <$ if( user.issuper == 0 ){ $>
+                	<!--<li class="list-group-item"><a href="#" url="/admin/adminList"><i class="glyphicon glyphicon-user"></i>管理员 </a></li>-->
                 	<li class="list-group-item"><a href="#/adminList" ><i class="glyphicon glyphicon-user"></i>管理员 </a></li>
                 <$ } $>
-                <li class="list-group-item"><a href="#/typeList"><i class="glyphicon glyphicon-th"></i>商品分类 </a></li>
+                <li class="list-group-item"><a href="#/typeList"><i class=" glyphicon glyphicon-th"></i>商品分类 </a></li>
                 <li class="list-group-item"><a href="#/proList"><i class="glyphicon glyphicon-shopping-cart"></i>商品管理 </a></li>
-                <li class="list-group-item"><a href="#"><i class="glyphicon glyphicon-list-alt"></i>新闻管理 </a></li>
+                <li class="list-group-item"><a href="#/newsList"><i class="glyphicon glyphicon-list-alt"></i>新闻管理 </a></li>
               </ul>
           </div>
-          
           <div class="col-xs-12 col-sm-9 content">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a></h3>
               </div>
-              <div class="panel-body" id="container">
-              </div>
+              <div class="panel-body" id="container"></div>
             </div>
         </div>
       </div>
     </div>
-    
     <$- include('admin/adminList.html') $>
     <$- include('admin/adminAdd.html') $>
     <$- include('admin/typeList.html') $>
     <$- include('admin/typeAdd.html') $>
     <$- include('admin/productList.html') $>
-    <$- include('admin/productAdd.html') $>	
+    <$- include('admin/productAdd.html') $>
+    <$- include('admin/newsList.html') $>
+    <$- include('admin/newsAdd.html') $>
+    <$- include('admin/newspreviews.html') $>
   </body>
   <script type="text/javascript" src="/js/site.min.js"></script>
   <script src="/js/ejs.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="/js/router.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/js/yuanku.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/validate.js" type="text/javascript" charset="utf-8"></script>
   <script src="/js/adminRouter.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.hotkeys.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/bootstrap-wysiwyg.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -1,15 +1,12 @@
 <style id="typeList" type="text/css">
 	<div class="panel panel-default">
-    <div class="panel-heading">
-    	商品分类列表
-    	<a href="#/typeAdd" class="glyphicon glyphicon-plus pull-right">新增</a>
-    </div>
+	    <div class="panel-heading">商品分类列表<a href="#/typeAdd" class="glyphicon glyphicon-plus pull-right">新增</a></div>
 	    <table class="table">
 	      <thead>
 	        <tr>
 	          <th>#</th>
 	          <th>分类名称</th>
-	          <th>备注</th>
+	          <th>分类描述</th>
 	          <th>上级分类</th>
 	          <th>操作</th>
 	        </tr>
@@ -22,10 +19,10 @@
 		          <td><%= type.typeinfo %></td>
 		          <td><%= type.pname %></td>
 		          <td>
-		          	<a href="#/typeDel/<%= type.tid %>">删除</a>
+			          <a href="#/typeDel/<%= type.tid %>">删除</a>
 		          </td>
 		        </tr>
-	      	<% }) %>
+	      	<% })%>
 	      </tbody>
 	    </table>
 	</div>

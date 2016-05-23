@@ -1,31 +1,32 @@
-var productTypeControl = function() {};
+var productTypeControl = function(){}
 
-productTypeControl.prototype.typeList = function( req,res,next ) {
+//商品分类
+productTypeControl.prototype.typeList = function( req,res,next ){
 	var ep = new EventProxy();
-	dataSource.getConn(ep);
-	if( req.params.pid ) {
-		adminModule.typeList(ep,[req.params.pid]);
-	} else {
-		adminModule.typeList(ep);
+	dataSource.getConn( ep );
+	if( req.params.pid ){
+		typeModule.typeList(ep,[ req.params.pid ]);
+	}else{
+		typeModule.typeList(ep);
 	}
 	
-	ep.on("success",function( data ) {
-		res.json(data).end();
+	ep.on("success",function( data ){
+		res.json(data);
 	});
 	ep.fail(function( err ){
 		next(err);
 	});
 }
 
-productTypeControl.prototype.typeAdd = function( req,res,next ) {
+productTypeControl.prototype.typeAdd = function( req,res,next ){
 	var ep = new EventProxy();
-	dataSource.getConn(ep);
-	adminModule.typeAdd(ep,[req.body.typename,req.body.typeinfo,req.body.pid]);
-	ep.on("success",function( data ) {
-		if( data.insertId ) {
-			res.json(config.info.suc).end();
-		} else {
-			res.json(config.error.typeAddErr).end();
+	dataSource.getConn( ep );
+	typeModule.typeAdd(ep,[ req.body.typename,req.body.typeinfo,req.body.pid ]);
+	ep.on("success",function( data ){
+		if( data.insertId ){
+			res.json( config.info.suc ).end();
+		}else{
+			res.json(config.error.typeAdderr).end();
 		}
 	});
 	ep.fail(function( err ){
@@ -33,20 +34,18 @@ productTypeControl.prototype.typeAdd = function( req,res,next ) {
 	});
 }
 
-productTypeControl.prototype.typeDel = function( req,res,next ) {
+productTypeControl.prototype.typeDel = function( req,res,next ){
 	var ep = new EventProxy();
-	dataSource.getConn(ep);
-	console.log(req.params.id);
-	adminModule.typeDel(ep,[req.params.id]);
-	ep.on("success",function() {
-		res.json(config.info.suc).end();
+	dataSource.getConn( ep );
+	typeModule.typeDel(ep,[ req.params.tid ]);
+	ep.on("success",function( data ){
+		res.json( config.info.suc ).end();
 	});
 	ep.fail(function( err ){
 		next(err);
 	});
 }
 
-
-module.exports = function() {
+module.exports=function(){
 	return new productTypeControl();
 }
