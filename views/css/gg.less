@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+a{
+    color: #1B242F;
+    text-decoration: none;
+    background: transparent;
+}
+img{
+    border: none;
+}
+div{
+    display: block;
+}
+
+.fixed-top{
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 999;
+    .fixed-top-weather{
+        margin-left: 100px;
+        float: left;
+        margin-top: 5px;
+    }
+    .fixed-top-login{
+        margin-right: 100px;
+        ul{
+            list-style: none;
+            li{
+                margin-left: 10px;
+                float: right;
+                color: #fff;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all 0.5s ease-in-out;
+                }
+                :hover{
+                        color: #f73805;
+                        transition: all 0.5s ease-in-out;
+                    }
+            }
+        }
+    }
+}
+
+.jumu{
+    background: url(../img/jumu.jpg) no-repeat center top;
+    min-height: 500px;
+    background-size: 100%;
+    position: relative;
+    .header-top{
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        background-color: beige;
+        background: rgba(253,253,253,0.6);
+        height: 120px;
+        .header-logo{
+            margin-left: 100px;
+            margin-top: 10px;
+            width: 200px;
+            float: left;
+            text-align: center;
+            p{
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+        .header-menu{
+            float: left;
+            margin-top: 40px;
+            margin-left: 5%;
+            ul{
+                list-style: none;
+                li{
+                    float: left;
+                    margin-left: 20px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    :hover{
+                        color: #f96900;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.footer{
+    background: #282d38;
+    .footer-top{
+        .col-md-4{
+            color: beige;
+            h3{
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+            }
+            p{
+                font-family:  "agency";
+                color: olive;
+                
+                strong{
+                    font-size: 16px;
+                }
+            }
+        }
+        .col-md-8{
+            margin-top: 20px;
+            color: burlywood;
+            ul{
+                list-style: none;
+                li{
+                    float: left;
+                    margin-left: 30px;
+                    a{
+                        text-decoration: none;
+                        color: beige;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    :hover{
+                        color: burlywood;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            .row{
+               width: 70%;
+               margin-left: 100px;
+               margin-top: 30px;
+            }
+            .fenx{
+                margin-top: 20px;
+                margin-left: 80px;
+                .fenxlogo{
+                    margin-top: 20px;
+                    float: left;
+                    ul{
+                        list-style: none;
+                        li{
+                            transition: all 0.6s ease-in-out;
+                        }
+                        li:hover{
+                            transform: scale(1.5) rotate(360deg);
+                            transition: all 0.6s ease-in-out;
+                        }
+                        .logo1{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -8px -8px;
+                        }
+                         .logo2{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -65px -8px;
+                        }
+                         .logo3{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -124px -7px;
+                        }
+                         .logo4{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -182px -7px;
+                        }
+                         .logo5{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -8px -80px;
+                        }
+                        .logo6{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -65px -80px;
+                        }
+                        .logo7{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -124px -80px;
+                        }
+                        .logo8{
+                            width: 32px;
+                            height: 32px;
+                            float: left;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid #282d38;
+                            background: url(../img/fenxlogo.png) no-repeat -182px -80px;
+                        }
+                    }
+                }
+                .ewm{
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.footer-bottom{
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+#goTop{
+    display: block;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: url(../img/move-top.png) no-repeat 0px 0px;
+}
+
+@media (max-width: 1240px){
+    .jumu{
+        min-height: 500px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 40%;
+            width: 95%;
+            .header-logo{
+                margin-left:5%;
+            }
+            .header-menu{
+                float: left;
+                margin-left: 8%;
+            }
+        }
+    }
+}
+@media (max-width: 1040px){
+    .jumu{
+        min-height: 400px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 40%;
+            width: 100%;
+            .header-logo{
+                margin-left: 1%;
+            }
+            .header-menu{
+                float: left;
+                margin-left: 1%;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .jumu{
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 30%;
+            width: 95%;
+            .header-logo{
+                margin-left: 2%;
+            }
+            .header-menu{
+                float: left;
+                margin-left: 3%;
+            }
+        }
+    }
+}
+@media (max-width: 936px){
+    .jumu{
+        min-height: 350px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 20%;
+            width: 95%;
+            .header-logo{
+                margin-left: 1%;
+            }
+            .header-menu{
+                float: right;
+                margin-left: 2%;
+                ul{
+                    li{
+                        font-size: 14px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 855px){
+    .jumu{
+        min-height: 300px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 10%;
+            width: 90%;
+            .header-logo{
+                margin-left: 1%;
+            }
+            .header-menu{
+                float: right;
+                margin-left: 1%;
+                ul{
+                    li{
+                       font-size: 14px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .jumu{
+        min-height: 300px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 10%;
+            width: 90%;
+            .header-logo{
+                margin-left: 25%;
+            }
+            .header-menu{
+                display: none;
+                ul{
+                    li{
+                        width: 550px;
+                        background: rgba(0,0,0,0.5);
+                        text-align: center;
+                        a{
+                            color: beige;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    span.menu{
+            width: 35px;
+            height: 35px;
+            background: url(../img/nav.png)no-repeat 0px 0px;
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            top: 38%;
+            right: 20%;
+    }
+}
+@media (max-width: 630px){
+    .jumu{
+        min-height: 200px;
+        .header-top{
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            width: 80%;
+            .header-logo{
+                margin-left: 4%;
+            }
+            .header-menu{
+                display: none;
+                ul{
+                    li{
+                        width: 390px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .fixed-top{
+        .fixed-top-weather{
+            margin-left: 10px;
+        }
+        .fixed-top-login{
+            margin-right: 10px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .jumu{
+        min-height: 200px;
+        .header-top{
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            width: 80%;
+            .header-logo{
+                margin-left: 4%;
+            }
+            .header-menu{
+                display: none;
+                ul{
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .fixed-top{
+        .fixed-top-weather{
+            margin-left: 5px;
+        }
+        .fixed-top-login{
+            margin-right: 1px;
+        }
+    }
+}
+@media (max-width: 344px){
+    .jumu{
+        min-height: 350px;
+        .header-top{
+            position: absolute;
+            left: 2%;
+            top: 20%;
+            width: 95%;
+            .header-logo{
+                margin-left: 1%;
+            }
+            .header-menu{
+                float: right;
+                margin-left: 2%;
+                ul{
+                    li{
+                        width: 100%;
+                        font-size: 12px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .jumu{
+        min-height: 150px;
+        .header-top{
+            position: absolute;
+            left: 5%;
+            top: 2%;
+            width: 80%;
+            .header-logo{
+                margin-left: 10%;
+            }
+            .header-menu{
+                display: none;
+            }
+        }
+    }
+}

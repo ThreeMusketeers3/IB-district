@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+a {
+  color: #1B242F;
+  text-decoration: none;
+  background: transparent;
+}
+img {
+  border: none;
+}
+div {
+  display: block;
+}
+.custom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #2d3349;
+}
+.custom img {
+  width: 100%;
+}
+.custom .custom_left {
+  margin-top: 20px;
+}
+.custom .custom_left .icom1 {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../img/icom.jpg) no-repeat -25px -140px;
+  margin: 35px auto;
+}
+.custom .custom_left .icom2 {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../img/icom.jpg) no-repeat -372px -140px;
+  margin: 35px auto;
+}
+.custom .custom_left .icom3 {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../img/icom.jpg) no-repeat -25px -256px;
+  margin: 35px auto;
+}
+.custom .custom_left .icom4 {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../img/icom.jpg) no-repeat -372px -372px;
+  margin: 35px auto;
+}
+.custom .custom_left .icom5 {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url(../img/icom.jpg) no-repeat -256px -256px;
+  margin: 35px auto;
+}
+.custom .custom_left a:hover .icom1 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -25px -140px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom2 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -372px -140px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom3 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -25px -256px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom4 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -372px -372px;
+  transform: scale(1.1);
+}
+.custom .custom_left a:hover .icom5 {
+  transition: all 0.5s ease-in;
+  background: url(../img/icom1.jpg) no-repeat -256px -256px;
+  transform: scale(1.1);
+}
+.custom .custom_left h3 {
+  font-weight: bold;
+  color: beige;
+}
+.custom .custom_left p {
+  color: beige;
+}
+.custom .custom_right {
+  margin-top: 40px;
+  background: #245580;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.custom .custom_right h2 {
+  font-weight: bold;
+  color: beige;
+  font-size: 38px;
+}
+.custom .custom_right p {
+  color: beige;
+  font-size: 20px;
+}
+.custom .custom_right span {
+  font-weight: 100;
+  font-size: 12px;
+  font-family: charcoal;
+  color: beige;
+}
+.custom .custom_zhong {
+  margin-top: 50px;
+}
+.custom .custom_zhong img {
+  width: 193px;
+  height: 101px;
+}
+.custom .custom_zhong h1 {
+  font-weight: bold;
+  font-family: "agency fb";
+  color: beige;
+}
+.custom .custom_zhong h1 span {
+  color: darkred;
+}
+.custom .custom_zhong p {
+  color: beige;
+}
+.custom .custom_zhong .custom-p {
+  font-weight: 100;
+  font-size: 12px;
+  font-family: charcoal;
+}
+.custom .custom_zhong h4 {
+  font-family: "楷体";
+  font-size: 22px;
+  color: beige;
+}
+/*# sourceMappingURL=Product customization.css.map */
